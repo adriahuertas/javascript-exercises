@@ -14,7 +14,7 @@ describe("getCompleted", () => {
     expect(getCompleted()).toBe("0")
   })
 
-  it.only("should return 1/2 when part is 01:00:00 and total is 02:00:00", () => {
+  it("should return 1/2 when part is 01:00:00 and total is 02:00:00", () => {
     expect(getCompleted("01:00:00", "02:00:00")).toBe("1/2")
   })
 
