@@ -40,4 +40,8 @@ describe("checkJump", () => {
   it("should return false", () => {
     expect(checkJump([3, 2, 2, 2, 2])).toBe(false)
   })
+
+  it("should return false", () => {
+    expect(checkJump([3, 2, 1])).toBe(false)
+  })
 })

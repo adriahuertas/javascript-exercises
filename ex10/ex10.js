@@ -37,21 +37,34 @@ A tener en cuenta
 */
 
 export default function checkJump(heights) {
-  if (!heights || heights.length < 2) return false
+  if (!heights || heights.length < 3) return false
 
   let goingUp = true
   let hasGoneUp = false
+  let hasGoneDown = false
 
   let lastValue = heights[0]
-  for (let i = 1; i < heights.length; i++) {
-    const currentValue = heights[i]
+  let index = 1
+  while (goingUp) {
+    if (index === heights.length) return false
+    const currentValue = heights[index]
     if (currentValue >= lastValue) {
-      if (!goingUp) return false
+      if (currentValue > lastValue) hasGoneUp = true
+      lastValue = currentValue
+      index++
     } else if (currentValue < lastValue) {
       goingUp = false
-      hasGoneUp = true
     }
-    lastValue = currentValue
   }
-  return hasGoneUp
+  while (!goingUp) {
+    if (index === heights.length) break
+    const currentValue = heights[index]
+    if (currentValue <= lastValue) {
+      if (currentValue < lastValue) hasGoneDown = true
+      lastValue = currentValue
+      index++
+    } else return false
+  }
+  return hasGoneDown && hasGoneUp
 }
+console.log(checkJump([2, 3, 2]))
