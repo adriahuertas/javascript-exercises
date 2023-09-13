@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for ex6/ex6.js</title>
+    <title>Code coverage report for ex7/ex7.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">ex6</a> ex6.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">ex7</a> ex7.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">96.07% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>55/55</span>
+                <span class='fraction'>49/51</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">84.61% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>11/13</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">96.07% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>55/55</span>
+                <span class='fraction'>49/51</span>
             </div>
         
             
@@ -114,24 +114,7 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a>
-<a name='L53'></a><a href='#L53'>53</a>
-<a name='L54'></a><a href='#L54'>54</a>
-<a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -164,69 +147,74 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
-Una pareja de entusiastas de la navidad ha creado una empresa de adornos navideños. El primer adorno que quieren fabricar es un cubo que se pone en los árboles.
+En los almacenes de Papá Noel están haciendo inventario. Hay tres almacenes (que se representa cada uno como un Array). En cada almacén hay regalos.
 &nbsp;
-El problema es que tienen que programar la máquina y no saben cómo hacerlo. Nos han pedido ayuda para lograrlo.
+Nos han pedido que escribamos un programa que nos diga qué regalos hay que comprar para reponer en nuestros almacenes ahora que se acerca la Navidad. Un regalo se tiene que reponer cuando sólo hay stock en uno de los tres almacenes.
 &nbsp;
-Para crear los cubos se le pasa un número con el tamaño deseado al programa y este devuelve un string con el diseño de ese tamaño. Por ejemplo, si le pasamos un 3, el programa debe devolver un cubo de 3x3x3:
+Por ejemplo, si tenemos los siguientes almacenes:
 &nbsp;
-const cube = createCube(3)
+const a1 = ['bici', 'coche', 'bici', 'bici']
+const a2 = ['coche', 'bici', 'muñeca', 'coche']
+const a3 = ['bici', 'pc', 'pc']
 &nbsp;
-  /\_\_\_\
- /\/\_\_\_\
-/\/\/\_\_\_\
-\/\/\/_/_/_/
- \/\/_/_/_/
-  \/_/_/_/
+/* El almacén a1 tiene "bici" y "coche".
+El almacén a2 tiene "coche", "bici" y "muñeca".
+El almacén a3 tiene "bici" y "pc".
 &nbsp;
-Como ves el cubo tiene tres caras visualmente. Los símbolos que se usan para construir las caras del cubo son: /, \, _ y (espacio en blanco).
+El regalo "muñeca" y "pc" sólo están en los almacenes a2 y a3 respectivamente.
 &nbsp;
-Otros ejemplos de cubos:
 &nbsp;
-const cubeOfOne = createCube(1)
+const gifts = getGiftsToRefill(a1, a2, a3) // ['muñeca', 'pc']
 &nbsp;
-/\_\
-\/_/
+Como ves, los almacenes pueden tener el mismo regalo repetido varias veces. Pero, por más existencias que haya en un almacén, si no tenemos en los otros dos, debemos reponerlo para tener mejor distribución.
+📝 Summary
 &nbsp;
-const cubeOfTwo = createCube(2)
+    Crea una función getGiftsToRefill que reciba tres Array como parámetros.
+    La función debe devolver un Array con los regalos que hay que reponer.
+    Un regalo se debe reponer cuando sólo hay stock en uno de los tres almacenes.
+    Si no hay ningún regalo que reponer, la función debe devolver un Array vacío.
+    Si hay más de un regalo que reponer, la función debe devolver un Array con todos los regalos que hay que reponer.
 &nbsp;
- /\_\_\
-/\/\_\_\
-\/\/_/_/
- \/_/_/
-&nbsp;
-A tener en cuenta:
-&nbsp;
-    Fíjate bien en los espacios en blanco que hay en el cubo.
-    El cubo tiene que ser simétrico.
-    Asegúrate de usar los símbolos correctos.
-    Cada nueva línea del cubo debe terminar con un salto de línea (\n) excepto la última.
-&nbsp;
-Basado en esta kata de Codewars
 */
 &nbsp;
-export default function createCube(size) {
-  let result = ""
-  for (let i = 0; i &lt; size; i++) {
-    result +=
-      " ".repeat(size - 1 - i) + "/\\".repeat(i + 1) + "_\\".repeat(size) + "\n"
-  }
-  for (let i = size - 1; i &gt;= 0; i--) {
-    result +=
-      " ".repeat(size - 1 - i) + "\\/".repeat(i + 1) + "_/".repeat(size) + "\n"
-  }
-  const cube = result.substring(0, result.length - 1)
-  return cube
+export default function getGiftsToRefill(a1, a2, a3) {
+  if (!a1 || !a2 || !a3) return []
+  const giftsToRefill = []
+  a1.forEach((gift) =&gt; {
+    if (!a2.includes(gift) <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; !a3.includes(gift))</span> <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >      giftsToRefill.push(gift)</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+  })
+  a2.forEach((gift) =&gt; {
+    if (!a1.includes(gift) &amp;&amp; !a3.includes(gift)) {
+      giftsToRefill.push(gift)
+    }
+  })
+  a3.forEach((gift) =&gt; {
+    if (!a2.includes(gift) &amp;&amp; !a1.includes(gift)) {
+      giftsToRefill.push(gift)
+    }
+  })
+  return [...new Set(giftsToRefill)]
 }
 &nbsp;</pre></td></tr></table></pre>
 

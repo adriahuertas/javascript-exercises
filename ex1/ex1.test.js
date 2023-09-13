@@ -17,5 +17,3 @@ describe("wrapping", () => {
     ])
   })
 })
-
-console.log("LOG:" + wrapping(["cat"]))

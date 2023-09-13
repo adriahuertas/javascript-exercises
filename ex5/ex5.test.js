@@ -18,7 +18,7 @@ describe("getMaxGifts", () => {
     expect(getMaxGifts([50, 70, 30], 5000, 4)).toBe(150)
   })
 
-  it.only("should return 20", () => {
+  it("should return 20", () => {
     expect(getMaxGifts([12, 3, 11, 5, 7], 20, 3)).toBe(20)
   })
 })

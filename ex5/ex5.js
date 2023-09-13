@@ -56,10 +56,6 @@ export default function getMaxGifts(giftsCities, maxGifts, maxCities) {
       maxSum = currentSum
     }
 
-    console.log(
-      `index: ${index}, citiesVisited: ${citiesVisited}, currentSum: ${currentSum}, current City: ${giftsCities[index]}`
-    )
-
     for (let i = index; i < giftsCities.length; i++) {
       exploreCities(i + 1, citiesVisited + 1, currentSum + giftsCities[i])
     }
