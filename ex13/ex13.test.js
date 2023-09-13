@@ -11,6 +11,8 @@ function getFilesToBackup(lastBackup, changes) {
     if (change[1] > lastBackup) filesChanged.push(change[0])
   })
 
+  if (!filesChanged.length) return []
+
   const filesChangedUnique = [...new Set(filesChanged)]
   // if (changes[0][1] > lastBackup) filesChanged.push(changes[0][0])
   console.log(filesChangedUnique)
