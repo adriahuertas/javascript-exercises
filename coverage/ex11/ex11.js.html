@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for ex7/ex7.js</title>
+    <title>Code coverage report for ex11/ex11.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">ex7</a> ex7.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">ex11</a> ex11.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.07% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>49/51</span>
+                <span class='fraction'>45/45</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">84.61% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>11/13</span>
+                <span class='fraction'>2/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.07% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>49/51</span>
+                <span class='fraction'>45/45</span>
             </div>
         
             
@@ -108,13 +108,7 @@
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -147,74 +141,62 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
-En los almacenes de Papá Noel están haciendo inventario. Hay tres almacenes (que se representa cada uno como un Array). En cada almacén hay regalos.
+Papa Noél está un poco preocupado porque los preparativos están llevando mucho tiempo. Hace poco se ha sacado una certificación de Scrum y ha decidido usar la metodología para organizar el trabajo de sus elfos.
 &nbsp;
-Nos han pedido que escribamos un programa que nos diga qué regalos hay que comprar para reponer en nuestros almacenes ahora que se acerca la Navidad. Un regalo se tiene que reponer cuando sólo hay stock en uno de los tres almacenes.
+Le dicen la duración esperada de las tareas con un string con el formato hh:mm:ss y en el mismo formato cuánto tiempo llevan trabajando en ella.
 &nbsp;
-Por ejemplo, si tenemos los siguientes almacenes:
+Pero Papa Noél no se entera rápidamente si falta o mucho para que termine, así que nos ha pedido que hagamos un programa que nos indique la porción de la tarea que ya se ha completado.
 &nbsp;
-const a1 = ['bici', 'coche', 'bici', 'bici']
-const a2 = ['coche', 'bici', 'muñeca', 'coche']
-const a3 = ['bici', 'pc', 'pc']
+Por ejemplo, si la tarea dura 03:00:00 y llevan trabajando 01:00:00 entonces ya han completado 1/3 de la tarea. En código:
 &nbsp;
-/* El almacén a1 tiene "bici" y "coche".
-El almacén a2 tiene "coche", "bici" y "muñeca".
-El almacén a3 tiene "bici" y "pc".
+getCompleted('01:00:00', '03:00:00') // '1/3'
+getCompleted('02:00:00', '04:00:00') // '1/2'
+getCompleted('01:00:00', '01:00:00') // '1/1'
+getCompleted('00:10:00', '01:00:00') // '1/6'
+getCompleted('01:10:10', '03:30:30') // '1/3'
+getCompleted('03:30:30', '05:50:50') // '3/5
 &nbsp;
-El regalo "muñeca" y "pc" sólo están en los almacenes a2 y a3 respectivamente.
+Ten en cuenta:
 &nbsp;
-&nbsp;
-const gifts = getGiftsToRefill(a1, a2, a3) // ['muñeca', 'pc']
-&nbsp;
-Como ves, los almacenes pueden tener el mismo regalo repetido varias veces. Pero, por más existencias que haya en un almacén, si no tenemos en los otros dos, debemos reponerlo para tener mejor distribución.
-📝 Summary
-&nbsp;
-    Crea una función getGiftsToRefill que reciba tres Array como parámetros.
-    La función debe devolver un Array con los regalos que hay que reponer.
-    Un regalo se debe reponer cuando sólo hay stock en uno de los tres almacenes.
-    Si no hay ningún regalo que reponer, la función debe devolver un Array vacío.
-    Si hay más de un regalo que reponer, la función debe devolver un Array con todos los regalos que hay que reponer.
+    El formato de la hora es hh:mm:ss.
+    El formato de la salida es un string a/b donde a es la porción de la tarea que ya se ha completado y b es la porción de la tarea que falta por completar.
+    La porción siempre se muestra con la menor fracción posible. (por ejemplo, nunca se mostraría 2/4 porque se puede representar como 1/2).
+    Si ya se ha completado la tarea, la fracción sería 1/1.
+    Ningun elfo ha sido maltratado durante la ejecución de este reto ni han tenido que usar Scrum de verdad.
 &nbsp;
 */
 &nbsp;
-export default function getGiftsToRefill(a1, a2, a3) {
-  if (!a1 || !a2 || !a3) return []
-  const giftsToRefill = []
-  a1.forEach((gift) =&gt; {
-    if (!a2.includes(gift) <span class="branch-0 cbranch-no" title="branch not covered" >&amp;&amp; !a3.includes(gift))</span> <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >      giftsToRefill.push(gift)</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-  })
-  a2.forEach((gift) =&gt; {
-    if (!a1.includes(gift) &amp;&amp; !a3.includes(gift)) {
-      giftsToRefill.push(gift)
-    }
-  })
-  a3.forEach((gift) =&gt; {
-    if (!a2.includes(gift) &amp;&amp; !a1.includes(gift)) {
-      giftsToRefill.push(gift)
-    }
-  })
-  return [...new Set(giftsToRefill)]
+import Fraction from "fraction.js"
+&nbsp;
+export default function getCompleted(part, total) {
+  if (!part || !total) <span class="branch-0 cbranch-no" title="branch not covered" >return "0"</span>
+&nbsp;
+  const toSeconds = (time) =&gt; {
+    const [hours, minutes, seconds] = time.split(":").map(Number)
+    console.log(hours, minutes, seconds)
+    return hours * 3600 + minutes * 60 + seconds
+  }
+&nbsp;
+  const partSeconds = toSeconds(part)
+  const totalSeconds = toSeconds(total)
+&nbsp;
+  const result = partSeconds / totalSeconds
+  const decimalFraction = new Fraction(result).toFraction()
+&nbsp;
+  return `${decimalFraction}`
 }
 &nbsp;</pre></td></tr></table></pre>
 
