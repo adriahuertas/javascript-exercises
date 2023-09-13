@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for ex5/ex5.js</title>
+    <title>Code coverage report for ex9/ex9.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">ex5</a> ex5.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">ex9</a> ex9.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>67/67</span>
+                <span class='fraction'>59/59</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>13/13</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>67/67</span>
+                <span class='fraction'>59/59</span>
             </div>
         
             
@@ -122,15 +122,7 @@
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a>
-<a name='L65'></a><a href='#L65'>65</a>
-<a name='L66'></a><a href='#L66'>66</a>
-<a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -172,97 +164,81 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">28x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">28x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">33x</span>
-<span class="cline-any cline-yes">33x</span>
-<span class="cline-any cline-yes">36x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
-Para no cansar a los renos, Papá Noel quiere dejar el máximo número de regalos haciendo el menor número posible de viajes.
+Una empresa que fabrica luces de Navidad nos ha pedido que le echemos una mano.
 &nbsp;
-Tiene un array de ciudades donde cada elemento es el número de regalos que puede dejar allí. [12, 3, 11, 5, 7]. Por otro lado, el límite de regalos que caben en su saco. Y, finalmente, el número de ciudades máximo que sus renos pueden visitar.
+Tienen unas tiras led que son como un Array. Cada posición es un led y puede ser estar encendido (1) o apagado (0).
 &nbsp;
-Como no quiere dejar una ciudad a medias, si no puede dejar todos los regalos que son de esa ciudad, no deja ninguno allí.
+Cada 7 segundos, los leds cambian de estado de esta forma:
 &nbsp;
-Crea un programa que le diga la suma más alta de regalos que podría repartir teniendo en cuenta el máximo de regalos que puede transportar y el número máximo de ciudades que puede visitar:
+    Si el led está apagado, se enciende si el led de su izquierda (index - 1) estaba encendido antes.
+    Si el led está encendido, se mantiene siempre encendido.
 &nbsp;
-const giftsCities = [12, 3, 11, 5, 7]
-const maxGifts = 20
-const maxCities = 3
+Nos han pedido un programa que nos diga cuantos segundos deben pasar hasta que todos los leds están encendidos. Los segundos se expresan en un número entero. Por ejemplo:
 &nbsp;
-// la suma más alta de regalos a repartir
-// visitando un máximo de 3 ciudades
-// es de 20: [12, 3, 5]
+const leds = [0, 1, 1, 0, 1]
+countTime(leds) // 7
+// 7 segundos ya que en el primer cambio
+// todas las luces se encendieron
+// 0s: [0, 1, 1, 0, 1]
+// 7s: [1, 1, 1, 1, 1]
 &nbsp;
-// la suma más alta sería [12, 7, 11]
-// pero excede el límite de 20 regalos y tendría
-// que dejar alguna ciudad a medias.
+countTime([0, 0, 0, 1]) // 21
+// 21 segundos ya que necesita tres cambios:
+// 0s: [0, 0, 0, 1]
+// 7s: [1, 0, 0, 1]
+// 14s: [1, 1, 0, 1]
+// 21s: [1, 1, 1, 1]
 &nbsp;
-getMaxGifts(giftsCities, maxGifts, maxCities) // 20
+countTime([0, 0, 1, 0, 0]) // 28
+// 28 segundos ya que necesita cuatro cambios:
+// 0s: [0, 0, 1, 0, 0]
+// 7s: [0, 0, 1, 1, 0]
+// 14s: [0, 0, 1, 1, 1]
+// 21s: [1, 0, 1, 1, 1]
+// 28s: [1, 1, 1, 1, 1]
 &nbsp;
-Si no se puede realizar ningún viaje que satisface los requerimientos, el resultado debe ser 0. Más ejemplos:
+A tener en cuenta
 &nbsp;
-getMaxGifts([12, 3, 11, 5, 7], 20, 3) // 20
-getMaxGifts([50], 15, 1) // 0
-getMaxGifts([50], 100, 1) // 50
-getMaxGifts([50, 70], 100, 1) // 70
-getMaxGifts([50, 70, 30], 100, 2) // 100
-getMaxGifts([50, 70, 30], 100, 3) // 100
-getMaxGifts([50, 70, 30], 100, 4) // 100
-&nbsp;
-A tener en cuenta:
-&nbsp;
-    maxGifts &gt;= 1
-    giftsCities.length &gt;= 1
-    maxCities &gt;= 1
-    El número de maxCities puede ser mayor a giftsCities.length
-&nbsp;
+    El array siempre tendrá al menos un led encendido.
+    El array puede tener cualquier longitud.
+    Si todos los leds están encendidos, el tiempo es 0.
 */
 &nbsp;
-export default function getMaxGifts(giftsCities, maxGifts, maxCities) {
-  if (!giftsCities || !maxGifts || !maxCities) {
-    return 0
+export default function countTime(leds) {
+  if (!leds) return 0
+  if (leds.every((led) =&gt; led === 1)) return 0
+&nbsp;
+  let counter = 0
+&nbsp;
+  while (!leds.every((led) =&gt; led === 1)) {
+    const currentLeds = [...leds]
+    leds.forEach((led, index) =&gt; {
+      if (led === 0) {
+        const indexToCheck = index === 0 ? leds.length - 1 : index - 1
+        if (currentLeds[indexToCheck] === 1) leds[index] = 1
+      }
+    })
+    counter += 1
   }
-&nbsp;
-  let maxSum = 0
-&nbsp;
-  function exploreCities(index, citiesVisited, currentSum) {
-    if (currentSum &gt; maxGifts || citiesVisited &gt; maxCities) {
-      return
-    }
-&nbsp;
-    if (currentSum &gt; maxSum) {
-      maxSum = currentSum
-    }
-&nbsp;
-    for (let i = index; i &lt; giftsCities.length; i++) {
-      exploreCities(i + 1, citiesVisited + 1, currentSum + giftsCities[i])
-    }
-  }
-&nbsp;
-  exploreCities(0, 0, 0)
-&nbsp;
-  return maxSum
+  return counter * 7
 }
 &nbsp;</pre></td></tr></table></pre>
 
