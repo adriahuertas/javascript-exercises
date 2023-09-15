@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for ex3/ex3.js</title>
+    <title>Code coverage report for ex16/ex16.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">ex3</a> ex3.js</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">ex16</a> ex16.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>41/41</span>
+                <span class='fraction'>51/51</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>41/41</span>
+                <span class='fraction'>51/51</span>
             </div>
         
             
@@ -104,7 +104,17 @@
 <a name='L39'></a><a href='#L39'>39</a>
 <a name='L40'></a><a href='#L40'>40</a>
 <a name='L41'></a><a href='#L41'>41</a>
-<a name='L42'></a><a href='#L42'>42</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -128,63 +138,83 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
-Tienes una caja de regalos de Navidad que Santa Claus quiere entregar a los niños. Cada regalo está representado por una cadena. Santa Claus tiene un trineo que puede llevar un peso limitado, y cada regalo dentro de la caja tiene un peso que es igual al número de letras en el nombre del regalo.
+Papá Noel está empezando a recibir un montón de cartas pero tienen un montón de problemas de formato. Para mejorar la lectura, va a escribir un programa que, dado un texto, lo formatea de acuerdo a las siguientes reglas:
 &nbsp;
-Santa Claus también tiene una lista de renos que pueden ayudarlo a entregar los regalos. Cada reno tiene un límite de peso máximo que puede llevar. El límite de peso máximo de cada reno es igual a dos veces el número de letras en su nombre.
+    Eliminar espacios al inicio y al final
+    Eliminar múltiples espacios en blanco y dejar sólo uno
+    Dejar un espacio después de cada coma
+    Quitar espacios antes de coma o punto
+    Las preguntas sólo deben terminar con un signo de interrogación
+    La primera letra de cada oración debe estar en mayúscula
+    Poner en mayúscula la palabra "Santa Claus" si aparece en la carta
+    Poner un punto al final de la frase si no tiene puntuación
 &nbsp;
-Tu tarea es implementar una función distributeGifts(packOfGifts, reindeers) que recibe una caja de regalos y una lista de renos y devuelve el número máximo de cajas de estos regalos que Santa Claus puede entregar a los niños. Las cajas de regalos no se pueden dividir.
+Las cartas las escriben inglés y aquí tenemos un ejemplo:
 &nbsp;
-const packOfGifts = ["book", "doll", "ball"]
-const reindeers = ["dasher", "dancer"]
+fixLetter(` hello,  how are you??     do you know if santa claus exists?  i really hope he does!  bye  `)
+// Hello, how are you? Do you know if Santa Claus exists? I really hope he does! Bye.
 &nbsp;
-// el pack de regalos pesa 4 + 4 + 4 = 12
-// los renos pueden llevar (2 * 6) + (2 * 6) = 24
-// por lo tanto, Santa Claus puede entregar 2 cajas de regalos
+fixLetter("  Hi Santa claus. I'm a girl from Barcelona , Spain . please, send me a bike.  Is it possible?")
+// Hi Santa Claus. I'm a girl from Barcelona, Spain. Please, send me a bike. Is it possible?
 &nbsp;
-distributeGifts(packOfGifts, reindeers) // 2
+A tener en cuenta:
 &nbsp;
-Cosas a tener en cuenta:
-&nbsp;
-    Las cajas de regalos no se pueden dividir.
-    Los nombres de los regalos y los renos siempre serán mayores que 0.
+    No te tienes que preocupar por los signos de puntuación que no sean coma, punto o interrogación.
+    Asegúrate de respetar los saltos de línea y espacios originales.
 &nbsp;
 */
 &nbsp;
-export default function distributeGifts(packOfGifts, reindeers) {
-  if (!packOfGifts || !reindeers) return 0
+export default function fixLetter(letter) {
+  let newLetter = letter.trim()
+  newLetter = newLetter.replace(/\s+/g, " ")
+  newLetter = newLetter.replace(/,\s*|,/g, ", ")
+  newLetter = newLetter.replace(/\?+/g, "?")
 &nbsp;
-  // Calculate pack of gifts weight
-  const packOfGiftsWeight = packOfGifts.reduce(
-    (acc, gift) =&gt; acc + gift.length,
-    0
-  )
-  // Calculate reindeers weight
-  const reindeersWeight = reindeers.reduce(
-    (acc, reindeer) =&gt; acc + reindeer.length * 2,
-    0
+  const capitalizeRegex = /(?:^|[.!?])\s*(\w)/g
+&nbsp;
+  newLetter = newLetter.replace(capitalizeRegex, (match, firstLetter) =&gt;
+    match.replace(firstLetter, firstLetter.toUpperCase())
   )
 &nbsp;
-  const totalPacksOfGifts = Math.floor(reindeersWeight / packOfGiftsWeight)
+  const santaRegex = /santa claus/gi
+  newLetter = newLetter.replace(santaRegex, "Santa Claus")
 &nbsp;
-  return totalPacksOfGifts
+  const endWithDotRegex = /[a-zA-Z]$/g
+  newLetter = newLetter.replace(endWithDotRegex, (match) =&gt; match + ".")
+&nbsp;
+  newLetter = newLetter.replace(/ [\.!,\?]/g, (match) =&gt; match[1])
+&nbsp;
+  newLetter = newLetter.replace(/,\s*$/, ".")
+&nbsp;
+  return newLetter
 }
 &nbsp;</pre></td></tr></table></pre>
 

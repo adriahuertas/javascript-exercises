@@ -2,22 +2,7 @@ import { expect } from "vitest"
 import { it } from "vitest"
 import { describe } from "vitest"
 
-function getFilesToBackup(lastBackup, changes) {
-  if (!changes || !changes.length || !lastBackup) return []
-
-  const filesChanged = []
-
-  changes.map((change) => {
-    if (change[1] > lastBackup) filesChanged.push(change[0])
-  })
-
-  if (!filesChanged.length) return []
-
-  const filesChangedUnique = [...new Set(filesChanged)]
-  // if (changes[0][1] > lastBackup) filesChanged.push(changes[0][0])
-
-  return filesChangedUnique.sort()
-}
+import getFilesToBackup from "./ex13"
 
 describe("getFilesToBackup", () => {
   it("should be a function", () => {
