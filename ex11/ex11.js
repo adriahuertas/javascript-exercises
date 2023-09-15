@@ -31,7 +31,6 @@ export default function getCompleted(part, total) {
 
   const toSeconds = (time) => {
     const [hours, minutes, seconds] = time.split(":").map(Number)
-    console.log(hours, minutes, seconds)
     return hours * 3600 + minutes * 60 + seconds
   }
 

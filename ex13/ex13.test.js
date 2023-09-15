@@ -15,7 +15,6 @@ function getFilesToBackup(lastBackup, changes) {
 
   const filesChangedUnique = [...new Set(filesChanged)]
   // if (changes[0][1] > lastBackup) filesChanged.push(changes[0][0])
-  console.log(filesChangedUnique)
 
   return filesChangedUnique.sort()
 }
@@ -46,5 +45,42 @@ describe("getFilesToBackup", () => {
       [1, 1546301000],
     ]
     expect(getFilesToBackup(lastBackup, changes)).toEqual([1, 3])
+  })
+
+  it("should return [1, 2, 3]", () => {
+    const lastBackup = 1546300800
+    const changes = [
+      [3, 1546301100],
+      [2, 1546300800],
+      [1, 1546300800],
+      [1, 1546300900],
+      [1, 1546301000],
+      [2, 1546301200],
+    ]
+    expect(getFilesToBackup(lastBackup, changes)).toEqual([1, 2, 3])
+  })
+
+  it("should return [1]", () => {
+    const lastBackup = 1546300800
+    const changes = [
+      [1, 1546300900],
+      [1, 1546301000],
+      [1, 1546301100],
+      [1, 1546301200],
+      [1, 1546301300],
+    ]
+    expect(getFilesToBackup(lastBackup, changes)).toEqual([1])
+  })
+
+  it("should return [] when no files meet the criteria", () => {
+    const lastBackup = 1546300800
+    const changes = [
+      [1, 1546300900],
+      [1, 1546301000],
+      [1, 1546301100],
+      [1, 1546301200],
+      [1, 1546301300],
+    ]
+    expect(getFilesToBackup(lastBackup, changes)).toEqual([1])
   })
 })

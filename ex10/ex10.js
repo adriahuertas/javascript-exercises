@@ -67,4 +67,3 @@ export default function checkJump(heights) {
   }
   return hasGoneDown && hasGoneUp
 }
-console.log(checkJump([2, 3, 2]))
