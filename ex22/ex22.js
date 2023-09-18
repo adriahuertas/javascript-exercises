@@ -47,5 +47,3 @@ export function checkStepNumbers(systemNames, stepNumbers) {
   console.log(stepsBySystem)
   return true
 }
-
-checkStepNumbers(["tree_1", "tree_1", "house"], [2, 1, 10])

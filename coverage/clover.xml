@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1695033519336" clover="3.2.0">
-  <project timestamp="1695033519336" name="All files">
-    <metrics statements="1268" coveredstatements="1261" conditionals="199" coveredconditionals="192" methods="38" coveredmethods="37" elements="1505" coveredelements="1490" complexity="0" loc="1268" ncloc="1268" packages="22" files="22" classes="22"/>
+<coverage generated="1695038570559" clover="3.2.0">
+  <project timestamp="1695038570560" name="All files">
+    <metrics statements="1360" coveredstatements="1353" conditionals="213" coveredconditionals="206" methods="39" coveredmethods="38" elements="1612" coveredelements="1597" complexity="0" loc="1360" ncloc="1360" packages="23" files="23" classes="23"/>
     <package name="ex1">
       <metrics statements="38" coveredstatements="38" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <file name="ex1.js" path="C:\Users\adria.huertas\Documents\repos\javascript-exercises\ex1\ex1.js">
@@ -810,9 +810,9 @@
       </file>
     </package>
     <package name="ex22">
-      <metrics statements="51" coveredstatements="51" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+      <metrics statements="49" coveredstatements="49" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
       <file name="ex22.js" path="C:\Users\adria.huertas\Documents\repos\javascript-exercises\ex22\ex22.js">
-        <metrics statements="51" coveredstatements="51" conditionals="9" coveredconditionals="9" methods="1" coveredmethods="1"/>
+        <metrics statements="49" coveredstatements="49" conditionals="8" coveredconditionals="8" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -847,23 +847,121 @@
         <line num="32" count="1" type="stmt"/>
         <line num="33" count="1" type="stmt"/>
         <line num="34" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="35" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="36" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="38" count="3" type="stmt"/>
-        <line num="39" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="40" count="10" type="stmt"/>
-        <line num="41" count="10" type="stmt"/>
-        <line num="42" count="10" type="cond" truecount="1" falsecount="0"/>
-        <line num="43" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="44" count="8" type="cond" truecount="1" falsecount="0"/>
-        <line num="45" count="8" type="stmt"/>
+        <line num="35" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="38" count="2" type="stmt"/>
+        <line num="39" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="8" type="stmt"/>
+        <line num="41" count="8" type="stmt"/>
+        <line num="42" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="43" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="44" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="45" count="7" type="stmt"/>
         <line num="46" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="47" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
         <line num="49" count="1" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="ex23">
+      <metrics statements="94" coveredstatements="94" conditionals="15" coveredconditionals="15" methods="1" coveredmethods="1"/>
+      <file name="ex23.js" path="C:\Users\adria.huertas\Documents\repos\javascript-exercises\ex23\ex23.js">
+        <metrics statements="94" coveredstatements="94" conditionals="15" coveredconditionals="15" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="50" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="51" count="9" type="stmt"/>
+        <line num="52" count="9" type="stmt"/>
+        <line num="53" count="9" type="stmt"/>
+        <line num="54" count="9" type="stmt"/>
+        <line num="55" count="9" type="stmt"/>
+        <line num="56" count="9" type="stmt"/>
+        <line num="57" count="9" type="stmt"/>
+        <line num="58" count="9" type="stmt"/>
+        <line num="59" count="9" type="stmt"/>
+        <line num="60" count="9" type="stmt"/>
+        <line num="61" count="9" type="stmt"/>
+        <line num="62" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="63" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="64" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="65" count="48" type="stmt"/>
+        <line num="66" count="48" type="stmt"/>
+        <line num="67" count="48" type="stmt"/>
+        <line num="68" count="48" type="stmt"/>
+        <line num="69" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="70" count="48" type="stmt"/>
+        <line num="71" count="48" type="stmt"/>
+        <line num="72" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="73" count="11" type="stmt"/>
+        <line num="74" count="11" type="stmt"/>
+        <line num="75" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="76" count="2" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="78" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="79" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="80" count="13" type="stmt"/>
+        <line num="81" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="82" count="12" type="stmt"/>
+        <line num="83" count="12" type="stmt"/>
+        <line num="84" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="85" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="86" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="87" count="10" type="stmt"/>
+        <line num="88" count="48" type="stmt"/>
+        <line num="89" count="48" type="stmt"/>
+        <line num="90" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="91" count="8" type="stmt"/>
+        <line num="92" count="8" type="stmt"/>
+        <line num="93" count="8" type="stmt"/>
+        <line num="94" count="8" type="stmt"/>
       </file>
     </package>
     <package name="ex3">
